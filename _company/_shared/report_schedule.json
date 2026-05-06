@@ -1,0 +1,36 @@
+{
+  "entries": [
+    {
+      "id": "sched-1778023642291",
+      "label": "매주 영상기획서 3편",
+      "hour": 9,
+      "minute": 0,
+      "days": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "action": "briefing",
+      "enabled": true,
+      "lastFiredAt": "2026-05-06"
+    },
+    {
+      "id": "sched-1778023669219",
+      "label": "새 일정",
+      "hour": 9,
+      "minute": 0,
+      "days": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "action": "briefing",
+      "enabled": true,
+      "lastFiredAt": "2026-05-06"
+    }
+  ]
+}

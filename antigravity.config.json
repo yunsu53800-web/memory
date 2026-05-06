@@ -1,0 +1,17 @@
+{
+  "models": {
+    "local": {
+      "provider": "ollama",
+      "model": "ollama/gemma4:e4b",
+      "apiKey": "ollama",
+      "temperature": 0.1,
+      "maxTokens": null,
+      "contextWindow": null
+    }
+  },
+  "defaultModel": "local",
+  "fallback": {
+    "enabled": true,
+    "model": "gemini3.1pro"
+  }
+}

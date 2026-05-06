@@ -1,0 +1,11 @@
+https://github.com/yunsu53800-web/memory.git
+git init
+
+git push
+
+
+
+git push -u origin main
+git config --global user.name "박윤수"
+git config --global user.email "yunsu53800@gmail.com"
+

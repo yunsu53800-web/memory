@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI 멘토 윤수 프로젝트</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="glow-text">AI 멘토 윤수</h1>
+            <p>당신의 코딩 여정을 함께합니다.</p>
+        </header>
+
+        <main>
+            <section class="card-grid">
+                <div class="card glass">
+                    <h2>새로운 시작</h2>
+                    <p>이곳에서 멋진 웹사이트 프로젝트를 만들어 보세요.</p>
+                    <button class="btn primary-btn" id="startBtn">시작하기</button>
+                </div>
+                <div class="card glass">
+                    <h2>로컬 AI 모델</h2>
+                    <p>설정된 로컬 모델과 함께 강력한 기능을 활용하세요.</p>
+                    <div class="chat-container">
+                        <div id="chatResponse" class="chat-response">AI 모델의 응답이 여기에 표시됩니다...</div>
+                        <div class="input-group">
+                            <input type="text" id="promptInput" placeholder="로컬 AI에게 질문해보세요..." />
+                            <button class="btn primary-btn" id="sendBtn">전송</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
