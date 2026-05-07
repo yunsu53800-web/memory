@@ -11,10 +11,13 @@
             "id": "67d8bbc6531573e6",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "그래프 뷰"
+              "type": "bases",
+              "state": {
+                "file": "무제 1.base",
+                "viewName": "표"
+              },
+              "icon": "lucide-table",
+              "title": "무제 1"
             }
           }
         ]
@@ -182,6 +185,7 @@
   },
   "active": "67d8bbc6531573e6",
   "lastOpenFiles": [
+    "무제 1.base",
     "환영합니다!.md",
     "무제.base",
     "무제.canvas"
