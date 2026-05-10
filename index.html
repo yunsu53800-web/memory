@@ -6,8 +6,12 @@
     <title>AI 멘토 윤수 프로젝트</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@300;500;700&display=swap" rel="stylesheet">
+    <!-- Markdown 라이브러리 추가 -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.0.6/purify.min.js"></script>
 </head>
 <body>
+    <div class="background-animation"></div>
     <div class="container">
         <header>
             <h1 class="glow-text">AI 멘토 윤수</h1>
@@ -16,18 +20,37 @@
 
         <main>
             <section class="card-grid">
+                <!-- 프로젝트 정보 카드 -->
                 <div class="card glass">
                     <h2>새로운 시작</h2>
                     <p>이곳에서 멋진 웹사이트 프로젝트를 만들어 보세요.</p>
                     <button class="btn primary-btn" id="startBtn">시작하기</button>
                 </div>
-                <div class="card glass">
-                    <h2>로컬 AI 모델</h2>
+
+                <!-- AI 채팅 카드 -->
+                <div class="card glass ai-chat-card">
+                    <div class="chat-header">
+                        <h2>로컬 AI 모델</h2>
+                        <button class="btn icon-btn" id="clearHistoryBtn" title="대화 기록 지우기">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg>
+                        </button>
+                    </div>
                     <p>설정된 로컬 모델과 함께 강력한 기능을 활용하세요.</p>
+                    
                     <div class="chat-container">
-                        <div id="chatResponse" class="chat-response">AI 모델의 응답이 여기에 표시됩니다...</div>
+                        <div id="chatHistory" class="chat-history">
+                            <!-- 대화 내용이 여기에 말풍선으로 추가됩니다 -->
+                        </div>
+                        
+                        <div class="prompt-templates">
+                            <button class="chip">코드 리뷰 해줘</button>
+                            <button class="chip">이 개념 설명해줘</button>
+                            <button class="chip">오류 찾아줘</button>
+                            <button class="chip">주석 달아줘</button>
+                        </div>
+                        
                         <div class="input-group">
-                            <input type="text" id="promptInput" placeholder="로컬 AI에게 질문해보세요..." />
+                            <input type="text" id="promptInput" placeholder="로컬 AI에게 질문해보세요..." autocomplete="off" />
                             <button class="btn primary-btn" id="sendBtn">전송</button>
                         </div>
                     </div>
