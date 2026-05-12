@@ -14,7 +14,7 @@
       ],
       "action": "briefing",
       "enabled": true,
-      "lastFiredAt": "2026-05-07"
+      "lastFiredAt": "2026-05-12"
     },
     {
       "id": "sched-1778023669219",
@@ -30,7 +30,7 @@
       ],
       "action": "briefing",
       "enabled": true,
-      "lastFiredAt": "2026-05-07"
+      "lastFiredAt": "2026-05-12"
     }
   ]
 }
